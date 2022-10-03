@@ -21,13 +21,14 @@ jobs:
       - name: Install
         run: yarn install
 
+       - name: Echo
+        run: echo "HELLO" && echo $(pwd)
+      # deploy
       # 빌드
       - name: Build
         run: npm run build
 
-      - name: Echo
-        run: echo "HELLO"
-      # deploy
+   
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
