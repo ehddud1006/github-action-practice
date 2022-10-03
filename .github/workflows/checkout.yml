@@ -26,7 +26,7 @@ jobs:
       # deploy
       # 빌드
       - name: Build
-        run: npm run build
+        run: echo "$(pwd)" && yarn run build
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
