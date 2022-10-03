@@ -25,9 +25,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      # deploy
-      - name: Deploy to Netlify
+      - name: Echo
         run: echo "HELLO"
+      # deploy
+
+      - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
           #publish할 디렉터리 경로
