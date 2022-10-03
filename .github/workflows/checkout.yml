@@ -27,8 +27,7 @@ jobs:
 
       # deploy
       - name: Deploy to Netlify
-        run: |
-          echo "HELLO"
+        run: echo "HELLO"
         uses: nwtgck/actions-netlify@v1.2
         with:
           #publish할 디렉터리 경로
