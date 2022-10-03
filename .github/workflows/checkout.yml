@@ -19,14 +19,14 @@ jobs:
 
       # package-lock.json && package.json file 동기화
       - name: Install
-        run: yarn install
+        run: cd my-app && yarn install
 
       - name: Echo
         run: echo "HELLO" && echo "$(pwd)"
       # deploy
       # 빌드
       - name: Build
-        run: echo "$(pwd)" && echo "$(ls)" && yarn run build
+        run: echo "$(pwd)" && cd my-app && echo "$(pwd)" && echo "$(ls)" && yarn run build
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
