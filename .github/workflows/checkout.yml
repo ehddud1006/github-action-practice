@@ -22,7 +22,7 @@ jobs:
         run: yarn install
 
        - name: Echo
-        run: echo "HELLO" && echo $(pwd)
+        run: echo "HELLO" && echo "$(pwd)"
       # deploy
       # 빌드
       - name: Build
