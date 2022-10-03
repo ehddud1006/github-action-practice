@@ -32,7 +32,7 @@ jobs:
         uses: nwtgck/actions-netlify@v1.2
         with:
           #publish할 디렉터리 경로
-          publish-dir: "./build"
+          publish-dir: "./my-app/build"
           #publish할 브랜치
           production-branch: main
           github-token: ${{ secrets.TEST_TOKEN }}
