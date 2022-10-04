@@ -20,7 +20,7 @@ jobs:
       - name: Build
         run: echo "$(pwd)" && cd my-app && echo "$(pwd)" && echo "$(ls)" && yarn run build
 
-      - name: CheckPWD
+      - name: CheckPWD1
         run: cd my-app && echo "$(pwd)" && echo "$(ls)"
 
       - name: Deploy to Netlify
