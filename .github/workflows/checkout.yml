@@ -26,7 +26,7 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: "./my-app"
+          publish-dir: "./my-app/build"
           production-branch: main
           github-token: ${{ secrets.TEST_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"
